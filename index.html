@@ -7,6 +7,157 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main></main>
+    <main>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-square-rounded-check"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path d="M9 12l2 2l4 -4" />
+        <path
+          d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9"
+        />
+      </svg>
+      <h1>Gestor de tareas</h1>
+      <p>Organiza y gestiona tus tareas de manera eficiente</p>
+      <div class="container-card-grid">
+        <div class="card">
+          <div class="container-svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon svg-1 icon-tabler icons-tabler-outline icon-tabler-list-check"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3.5 5.5l1.5 1.5l2.5 -2.5" />
+              <path d="M3.5 11.5l1.5 1.5l2.5 -2.5" />
+              <path d="M3.5 17.5l1.5 1.5l2.5 -2.5" />
+              <path d="M11 6l9 0" />
+              <path d="M11 12l9 0" />
+              <path d="M11 18l9 0" />
+            </svg>
+          </div>
+          <div class="container-text">
+            <p>Total</p>
+            <p class="cantidad">0</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container-svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon svg-2 icon-tabler icons-tabler-outline icon-tabler-alert-square-rounded"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M12 3c7.2 0 9 1.8 9 9c0 7.2 -1.8 9 -9 9c-7.2 0 -9 -1.8 -9 -9c0 -7.2 1.8 -9 9 -9"
+              />
+              <path d="M12 8v4" />
+              <path d="M12 16h.01" />
+            </svg>
+          </div>
+          <div class="container-text">
+            <p>Pendientes</p>
+            <p class="cantidad">0</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="container-svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon svg-3 icon-tabler icons-tabler-outline icon-tabler-circle-check"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+              <path d="M9 12l2 2l4 -4" />
+            </svg>
+          </div>
+          <div class="container-text">
+            <p>Completadas</p>
+            <p class="cantidad">0</p>
+          </div>
+        </div>
+      </div>
+      <form action="">
+        <div class="container-input-button">
+          <input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="Añadir nueva tarea..."
+          />
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-plus"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M12 5l0 14" />
+              <path d="M5 12l14 0" /></svg
+            >Añadir
+          </button>
+        </div>
+        <p class="error" id="error">Error</p>
+      </form>
+      <div class="container-tareas">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-plus"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M12 5l0 14" />
+          <path d="M5 12l14 0" />
+        </svg>
+        <p class="tereas">No hay tareas</p>
+        <p class="subtitle-tareas">Comienza añadiendo tu primera tarea</p>
+      </div>
+    </main>
   </body>
 </html>
