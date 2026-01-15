@@ -210,7 +210,7 @@ main {
   .container-tarea {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    justify-content: space-between;
     margin-top: 1rem;
     background-color: var(--background-secondary);
     padding: 1rem;
@@ -220,6 +220,43 @@ main {
 
     p {
       color: var(--color-text-primary);
+    }
+
+    .container-text-tarea {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .container-svg {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      svg {
+        margin: 0;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: transparent;
+        color: var(--color-text-primary);
+        padding: 0.6rem;
+        border-radius: 10px;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background-color: var(--color-check-light);
+        }
+      }
+
+      .svg-eliminar {
+        color: var(--color-red);
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background-color: var(--color-red-light);
+          color: var(--color-text-primary);
+        }
+      }
     }
   }
 }
