@@ -260,3 +260,32 @@ main {
     }
   }
 }
+
+/* Vista móvil */
+
+@media screen and (max-width: 430px) {
+  main {
+    width: 90%;
+
+    .container-card-grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    form {
+      .container-input-button {
+        button {
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+/* Vista tablet */
+
+@media screen and (min-width: 431px) and (max-width: 1366px) {
+  main {
+    width: 90%;
+  }
+}
