@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gestor de tareas</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <main>
@@ -117,7 +118,7 @@
             id="text"
             placeholder="Añadir nueva tarea..."
           />
-          <button>
+          <button id="agregar">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -138,7 +139,7 @@
         </div>
         <p class="error" id="error">Error</p>
       </form>
-      <div class="container-tareas">
+      <div class="container-tareas" id="container-tarea">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -157,6 +158,11 @@
         </svg>
         <p class="tereas">No hay tareas</p>
         <p class="subtitle-tareas">Comienza añadiendo tu primera tarea</p>
+      </div>
+      <h2>Pendientes (<span>1</span>)</h2>
+      <div class="container-tarea">
+        <input type="checkbox" />
+        <p>Tarea a realizar</p>
       </div>
     </main>
   </body>

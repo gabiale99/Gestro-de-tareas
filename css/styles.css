@@ -156,14 +156,14 @@ main {
     }
 
     .error {
-      text-align: start;
-      padding-top: 0.3rem;
-      color: var(--color-red);
       display: none;
     }
 
     .error-no {
       display: block;
+      text-align: start;
+      padding-top: 0.3rem;
+      color: var(--color-red);
     }
   }
 
@@ -192,6 +192,34 @@ main {
 
     .subtitle-tareas {
       margin-bottom: 1.5rem;
+    }
+  }
+
+  .container-tareas-off {
+    display: none;
+  }
+
+  h2 {
+    text-align: start;
+    padding-top: 2rem;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+
+  .container-tarea {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    background-color: var(--background-secondary);
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px -4px var(--shadow);
+
+    p {
+      color: var(--color-text-primary);
     }
   }
 }
